@@ -1,0 +1,18 @@
+
+.todayWeather{
+    border: 2px solid #cfcece;
+    border-radius: 25px;
+    text-align: center;
+}
+
+.todayWeatherExpanded{
+    border: 2px solid #cfcece;
+    border-radius: 25px;
+    text-align: center;
+}
+
+.sideBar{
+    display: none;
+    float: right;
+}
+  

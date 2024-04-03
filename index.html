@@ -4,12 +4,111 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
+    <link rel="stylesheet" href="styles/grids.css">
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
-<body>
-    <h1>Weather App</h1>
-    /////displays weather result
-    <div id="weather-results"></div>
-    <script src="./index.js"></script>
 
+<body>
+
+    <nav>
+        <div class="logo">Roamweather</div>
+
+        <div class="searchbar">
+            <input type="text" name="searchbar" id="searchbar">
+            <button>Search</button>
+        </div>
+
+        <div class="menuButn"><button id="menuBtn">Menu</button></div>
+    </nav>
+<br>
+
+<div class="sidebar" id="sidebar">
+    <h2>Navigation</h2>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+  </div>
+  
+<br>
+  </div>
+    <div class="weatherDetails">
+        <div class="todayWeather">
+            <h3>Today's Weather</h3>
+            <div id="weather-results"></div>
+        </div>
+
+        <div class="todayWeatherExpanded">
+            <h3>Ext. Details</h3>
+            <h4>Precip</h4>
+            <h4>Wind</h4>
+            <div class="weeklyForecast">
+                <div class="mon">
+                    <h5>Mon</h5>
+                    <img src="sun.png" width="40px" height="40px" >
+                    <p>27°C</p>
+                    <p>15°C</p>
+                </div>
+                <div class="tue">
+                    <h5>Mon</h5>
+                    <img src="sun.png" width="40px" height="40px" >
+                    <p>27°C</p>
+                    <p>15°C</p>
+                </div>
+                <div class="wed">
+                    <h5>Mon</h5>
+                    <img src="sun.png" width="40px" height="40px" >
+                    <p>27°C</p>
+                    <p>15°C</p>
+                </div>
+                <div class="thur">
+                    <h5>Mon</h5>
+                    <img src="sun.png" width="40px" height="40px" >
+                    <p>27°C</p>
+                    <p>15°C</p>
+                </div>
+                <div class="fri">
+                    <h5>Mon</h5>
+                    <img src="sun.png" width="40px" height="40px" >
+                    <p>27°C</p>
+                    <p>15°C</p>
+                </div>
+                <div class="sat">
+                    <h5>Mon</h5>
+                    <img src="sun.png" width="40px" height="40px" >
+                    <p>27°C</p>
+                    <p>15°C</p>
+                </div>
+                <div class="sun">
+                    <h5>Mon</h5>
+                    <img src="sun.png" width="40px" height="40px" >
+                    <p>27°C</p>
+                    <p>15°C</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script>const sideBarBtn = document.getElementById("menuBtn");
+        let isSideBarVisible = false; // Track sidebar visibility state
+        
+        sideBarBtn.addEventListener('click', function toggleMenu() {
+          const sidebar = document.getElementById('sidebar');
+        
+          isSideBarVisible = !isSideBarVisible; // Toggle state
+        
+          if (isSideBarVisible) {
+            sidebar.style.display='block';  // Slide in sidebar
+          } else {
+            sidebar.style.display = 'none';  // Slide out sidebar
+          }
+        });
+        
+        </script>
+    <script src="index.js"></script>
+
+    <br>
+    <footer>
+        <a href="https://www.flaticon.com/free-icons/sol" title="sol icons">Sol icons created by Freepik - Flaticon</a>
+    </footer>
 </body>
 </html>

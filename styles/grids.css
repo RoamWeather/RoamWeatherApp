@@ -1,0 +1,28 @@
+nav {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+
+
+    }
+    
+    /*.logo { grid-area: 1 / 5 / 2 / 6; }
+    .div2 { grid-area: 2 / 5 / 3 / 6; }*/
+
+.weatherDetails {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 1fr;
+        grid-column-gap: 20px;
+        grid-row-gap: 0px;
+        }
+
+.weeklyForecast {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            grid-template-rows: 1fr;
+            grid-column-gap: 0px;
+            grid-row-gap: 0px;
+            }
